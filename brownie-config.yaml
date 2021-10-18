@@ -1,0 +1,20 @@
+# default balance of 10,000 ether to simplify testing of ETH pools
+networks:
+  default: hardhat-fork
+  development:
+    cmd_settings:
+      gas_price: auto
+      gas_limit: auto
+      default_balance: 10000
+      chain_id: 1337
+  mainnet:
+    cmd_settings:
+      gas_price: 50
+
+
+compiler:
+  solc:
+    version: 0.8.0
+    optimizer:
+      enabled: true
+      runs: 200
